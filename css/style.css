@@ -141,6 +141,16 @@ body {
     border-color: #6a0dad;
 }
 
+/* Section Container */
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* horizontally center all child elements */
+    justify-content: center;  /* vertically center if height is set */
+    text-align: center;
+    padding: 40px 20px;
+}
+
 /* Section Headings */
 .section-heading {
     font-size: 2.5rem;
@@ -153,6 +163,8 @@ body {
     display: inline-block;
     padding-bottom: 8px;
 }
+
+/* Underline Effect */
 .section-heading::after {
     content: '';
     position: absolute;
@@ -164,9 +176,11 @@ body {
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
+
 .section-heading:hover::after {
     transform: scaleX(1);
 }
+
 
 /* Certifications Section */
 .certificate-container {
